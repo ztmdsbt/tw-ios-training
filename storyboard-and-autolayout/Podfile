@@ -1,4 +1,2 @@
-#this is a test
-
-pod 'SDWebImage'
-
+platform :ios
+pod 'SDWebImage', '~> 3.5.2'

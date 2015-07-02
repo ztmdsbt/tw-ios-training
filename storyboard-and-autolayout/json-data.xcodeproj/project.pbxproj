@@ -16,7 +16,6 @@
 		4F6EE3F31B38E620005D7DB5 /* json_dataTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F6EE3F21B38E620005D7DB5 /* json_dataTests.swift */; };
 		4F6EE3FD1B38E756005D7DB5 /* TableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F6EE3FC1B38E756005D7DB5 /* TableViewCell.swift */; };
 		4FEBC6DB1B44A0DF00B42C44 /* FactInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FEBC6DA1B44A0DF00B42C44 /* FactInfo.swift */; };
-		D33D341AA6D491D5FE314442 /* Podfile in Resources */ = {isa = PBXBuildFile; fileRef = D33D3318DF6E35F97573A8AA /* Podfile */; };
 		D33D3CF097BFE4739E93AAAE /* facts.json in Resources */ = {isa = PBXBuildFile; fileRef = D33D38BCF1A593E775F69C24 /* facts.json */; };
 		D33D3F1119263DBD0B25415C /* Podfile.lock in Resources */ = {isa = PBXBuildFile; fileRef = D33D3A56112681A541F2EB87 /* Podfile.lock */; };
 		F478226B86301F000CA5F7FE /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 51F41DB9B47433327C9070A1 /* libPods.a */; };
@@ -29,20 +28,6 @@
 			proxyType = 1;
 			remoteGlobalIDString = 4F6EE3D41B38E61F005D7DB5;
 			remoteInfo = "json-data";
-		};
-		D33D36DEC94D5B98F777A032 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = D33D36F93BFB7C6CB611C13B /* Pods.xcodeproj */;
-			proxyType = 2;
-			remoteGlobalIDString = F93416FDEE30B5E2D08CF5B8;
-			remoteInfo = Pods;
-		};
-		D33D3FBA9DBD77CC18A992D6 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = D33D36F93BFB7C6CB611C13B /* Pods.xcodeproj */;
-			proxyType = 2;
-			remoteGlobalIDString = 079FA20C4E60E2945CBD12FE;
-			remoteInfo = "Pods-SDWebImage";
 		};
 /* End PBXContainerItemProxy section */
 
@@ -63,8 +48,6 @@
 		51F41DB9B47433327C9070A1 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		822E983F64B3751053C5E1E6 /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
 		A8C24A3F2493B151636DBFE4 /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
-		D33D3318DF6E35F97573A8AA /* Podfile */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Podfile; sourceTree = "<group>"; };
-		D33D36F93BFB7C6CB611C13B /* Pods.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = Pods.xcodeproj; path = Pods/Pods.xcodeproj; sourceTree = "<group>"; };
 		D33D38BCF1A593E775F69C24 /* facts.json */ = {isa = PBXFileReference; lastKnownFileType = file.json; path = facts.json; sourceTree = "<group>"; };
 		D33D3A56112681A541F2EB87 /* Podfile.lock */ = {isa = PBXFileReference; lastKnownFileType = file.lock; path = Podfile.lock; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -106,8 +89,6 @@
 				063D6262FDCCE2A6F4F7C488 /* Pods */,
 				C3D1FBAC01C253BFFA0DC333 /* Frameworks */,
 				D33D3A56112681A541F2EB87 /* Podfile.lock */,
-				D33D3318DF6E35F97573A8AA /* Podfile */,
-				D33D36F93BFB7C6CB611C13B /* Pods.xcodeproj */,
 			);
 			sourceTree = "<group>";
 		};
@@ -168,15 +149,6 @@
 				51F41DB9B47433327C9070A1 /* libPods.a */,
 			);
 			name = Frameworks;
-			sourceTree = "<group>";
-		};
-		D33D3F5F2BC0707D0274B56A /* Products */ = {
-			isa = PBXGroup;
-			children = (
-				D33D39F229B68CDFBB20FB0F /* libPods.a */,
-				D33D317724C3D954B4238BB2 /* libPods-SDWebImage.a */,
-			);
-			name = Products;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -248,12 +220,6 @@
 			mainGroup = 4F6EE3CC1B38E61F005D7DB5;
 			productRefGroup = 4F6EE3D61B38E61F005D7DB5 /* Products */;
 			projectDirPath = "";
-			projectReferences = (
-				{
-					ProductGroup = D33D3F5F2BC0707D0274B56A /* Products */;
-					ProjectRef = D33D36F93BFB7C6CB611C13B /* Pods.xcodeproj */;
-				},
-			);
 			projectRoot = "";
 			targets = (
 				4F6EE3D41B38E61F005D7DB5 /* json-data */,
@@ -261,23 +227,6 @@
 			);
 		};
 /* End PBXProject section */
-
-/* Begin PBXReferenceProxy section */
-		D33D317724C3D954B4238BB2 /* libPods-SDWebImage.a */ = {
-			isa = PBXReferenceProxy;
-			fileType = archive.ar;
-			path = "libPods-SDWebImage.a";
-			remoteRef = D33D3FBA9DBD77CC18A992D6 /* PBXContainerItemProxy */;
-			sourceTree = BUILT_PRODUCTS_DIR;
-		};
-		D33D39F229B68CDFBB20FB0F /* libPods.a */ = {
-			isa = PBXReferenceProxy;
-			fileType = archive.ar;
-			path = libPods.a;
-			remoteRef = D33D36DEC94D5B98F777A032 /* PBXContainerItemProxy */;
-			sourceTree = BUILT_PRODUCTS_DIR;
-		};
-/* End PBXReferenceProxy section */
 
 /* Begin PBXResourcesBuildPhase section */
 		4F6EE3D31B38E61F005D7DB5 /* Resources */ = {
@@ -289,7 +238,6 @@
 				4F6EE3E41B38E620005D7DB5 /* Images.xcassets in Resources */,
 				D33D3CF097BFE4739E93AAAE /* facts.json in Resources */,
 				D33D3F1119263DBD0B25415C /* Podfile.lock in Resources */,
-				D33D341AA6D491D5FE314442 /* Podfile in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -477,6 +425,7 @@
 				INFOPLIST_FILE = "json-data/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				USER_HEADER_SEARCH_PATHS = "\"${PROJECT_DIR}/Pods\"/**";
 			};
 			name = Debug;
 		};
@@ -488,6 +437,7 @@
 				INFOPLIST_FILE = "json-data/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				USER_HEADER_SEARCH_PATHS = "\"${PROJECT_DIR}/Pods\"/**";
 			};
 			name = Release;
 		};
