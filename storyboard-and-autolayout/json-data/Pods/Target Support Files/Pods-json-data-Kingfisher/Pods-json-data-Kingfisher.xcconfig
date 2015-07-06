@@ -1,0 +1,1 @@
+PODS_JSON_DATA_KINGFISHER_OTHER_LDFLAGS = -weak_framework "WatchKit"

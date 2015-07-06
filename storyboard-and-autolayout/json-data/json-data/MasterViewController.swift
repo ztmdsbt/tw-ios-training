@@ -7,14 +7,13 @@
 //
 
 import UIKit
-//import WebImage
+import Kingfisher
 
 class MasterViewController: UITableViewController {
 
   var detailViewController: DetailViewController? = nil
   var jsonTitle: NSString! = nil
   var jsonArray: NSArray! = nil
-
 
   override func awakeFromNib() {
     super.awakeFromNib()
@@ -52,8 +51,7 @@ class MasterViewController: UITableViewController {
   override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
     if segue.identifier == "showDetail" {
       if let indexPath = self.tableView.indexPathForSelectedRow() {
-//        let object = FactInfo()
-        let object = ""
+        let object = jsonArray[indexPath.row] as! NSDictionary
         let controller = (segue.destinationViewController as! UINavigationController).topViewController as! DetailViewController
         controller.detailItem = object
         controller.navigationItem.leftBarButtonItem = self.splitViewController?.displayModeButtonItem()
@@ -80,7 +78,7 @@ class MasterViewController: UITableViewController {
     if let urlString = jsonArray[indexPath.row]["imageHref"] as? String {
       let imageUrl = NSURL(string: urlString)
       if let imageData = NSData(contentsOfURL: imageUrl!) {
-        cell.imgAvater.image = UIImage(data: imageData)
+        cell.imgAvater.kf_setImageWithURL(imageUrl!, placeholderImage: nil)
       }
     }
     return cell
@@ -106,7 +104,7 @@ class MasterViewController: UITableViewController {
       let jsonDict = NSJSONSerialization.JSONObjectWithData(jsonData, options: nil, error: &error) as! NSDictionary
       jsonTitle = jsonDict["title"] as! NSString
       jsonArray = jsonDict["rows"] as! NSArray
-    }
+   }
   }
 
 }

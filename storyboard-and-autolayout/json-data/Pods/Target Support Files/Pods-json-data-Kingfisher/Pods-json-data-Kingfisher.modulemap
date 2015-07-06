@@ -1,0 +1,6 @@
+framework module Kingfisher {
+  umbrella header "Pods-json-data-Kingfisher-umbrella.h"
+
+  export *
+  module * { export * }
+}

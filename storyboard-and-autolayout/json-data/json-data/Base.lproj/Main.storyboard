@@ -39,14 +39,14 @@
                                     <constraint firstAttribute="height" constant="150" id="ubo-wf-vv9"/>
                                 </constraints>
                             </imageView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Description" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="U4p-0o-rL1">
-                                <rect key="frame" x="257" y="384" width="88" height="21"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Description" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="U4p-0o-rL1">
+                                <rect key="frame" x="24" y="384" width="552" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Title" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Xu8-Kq-co6">
-                                <rect key="frame" x="279" y="189" width="44" height="29"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Title" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Xu8-Kq-co6">
+                                <rect key="frame" x="278" y="189" width="44" height="29"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="24"/>
                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
@@ -60,6 +60,8 @@
                             <constraint firstItem="Xu8-Kq-co6" firstAttribute="top" secondItem="SYR-Wa-9uf" secondAttribute="bottom" priority="750" constant="125" id="Kk8-oO-8EE"/>
                             <constraint firstAttribute="centerX" secondItem="Xu8-Kq-co6" secondAttribute="centerX" id="eWX-PT-P3j"/>
                             <constraint firstItem="U4p-0o-rL1" firstAttribute="top" secondItem="NMk-Di-aoa" secondAttribute="bottom" constant="8" id="f8z-1b-qcr"/>
+                            <constraint firstItem="U4p-0o-rL1" firstAttribute="leading" secondItem="svH-Pt-448" secondAttribute="leadingMargin" constant="8" id="gSd-Sx-kaI"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="U4p-0o-rL1" secondAttribute="trailing" constant="8" id="gX8-cQ-xsH"/>
                             <constraint firstItem="GAO-Cl-Wes" firstAttribute="top" relation="greaterThanOrEqual" secondItem="U4p-0o-rL1" secondAttribute="bottom" constant="30" id="qBw-QS-Jfa"/>
                         </constraints>
                     </view>
@@ -180,6 +182,6 @@
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="6S0-TO-JiA"/>
+        <segue reference="Tll-UG-LXB"/>
     </inferredMetricsTieBreakers>
 </document>

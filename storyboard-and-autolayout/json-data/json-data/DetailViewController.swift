@@ -25,9 +25,22 @@ class DetailViewController: UIViewController {
 
   func configureView() {
     // Update the user interface for the detail item.
-    if let detail: FactInfo = self.detailItem as? FactInfo {
-     if let description  = self.labelDescription{
-        description.text = detail.descrtiption
+    if let detail: NSDictionary = self.detailItem as? NSDictionary {
+      if let description = self.labelDescription {
+        description.text = detail["description"] as? String
+//        description.lineBreakMode = 
+//        description.numberOfLines = 0;
+      }
+
+      if let title = self.labelTtitle {
+        title.text = detail["title"] as? String
+      }
+
+      if let avatar = self.imageAvatar {
+        if let urlString = detail["imageHref"] as? String {
+          let imageUrl = NSURL(string: urlString)
+          avatar.kf_setImageWithURL(imageUrl!, placeholderImage: nil)
+        }
       }
     }
   }

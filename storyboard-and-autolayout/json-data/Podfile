@@ -1,0 +1,15 @@
+# Uncomment this line to define a global platform for your project
+use_frameworks!
+platform :ios, '8.0'
+
+target 'json-data' do
+  pod 'Kingfisher'
+  pod 'Alamofire'
+  pod 'MBProgressHUD', '~> 0.9.0'
+  pod 'SDWebImage'
+end
+
+target 'json-dataTests' do
+
+end
+
